@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   // entry: "./src/index.js",
@@ -6,6 +7,11 @@ module.exports = {
     index: "./src/index.js",
     print: "./src/print.js",
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Output Management",
+    }),
+  ],
   output: {
     // filename: "bundle.js",
     filename: "[name].bundle.js",
