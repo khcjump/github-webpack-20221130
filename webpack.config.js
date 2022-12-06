@@ -9,6 +9,11 @@ module.exports = {
   },
   //just for development time (not for product env)
   devtool: "inline-source-map",
+  //webpack-dev-server-start
+  devServer: {
+    static: "./dist",
+  },
+  //webpack-dev-server-end
   plugins: [
     new HtmlWebpackPlugin({
       title: "Output Management",
@@ -20,6 +25,11 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
+  //webpack-dev-server-start
+  optimization: {
+    runtimeChunk: "single",
+  },
+  //webpack-dev-server-end
   module: {
     rules: [
       {

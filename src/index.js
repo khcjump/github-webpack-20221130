@@ -6,7 +6,7 @@ function component() {
   const element = document.createElement("div");
 
   // Lodash, now imported by this script
-  element.innerHTML = _.join(["Hello", "webpack", "watch update"], " ");
+  element.innerHTML = _.join(["Hello", "webpack", "watch update 2"], " ");
   element.classList.add("hello");
 
   const btn = document.createElement("button");
