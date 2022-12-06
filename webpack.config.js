@@ -31,12 +31,13 @@ module.exports = {
   //webpack-dev-server-end
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      title: "Caching",
     }),
   ],
   output: {
     // filename: "bundle.js",
-    filename: "[name].bundle.js",
+    //filename: "[name].bundle.js",
+    filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
