@@ -7,6 +7,8 @@ module.exports = {
     index: "./src/index.js",
     print: "./src/print.js",
   },
+  //just for development time (not for product env)
+  devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
       title: "Output Management",
