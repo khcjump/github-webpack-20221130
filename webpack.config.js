@@ -8,21 +8,20 @@ module.exports = {
   //   print: "./src/print.js",
   // },
   mode: "development",
-  // entry: {
-  //   index: "./src/index.js",
-  //   another: "./src/another-module.js",
-  // },
   entry: {
-    index: {
-      import: "./src/index.js",
-      dependOn: "shared",
-    },
-    another: {
-      import: "./src/another-module.js",
-      dependOn: "shared",
-    },
-    shared: "lodash",
+    index: "./src/index.js",
   },
+  // entry: {
+  //   index: {
+  //     import: "./src/index.js",
+  //     dependOn: "shared",
+  //   },
+  //   another: {
+  //     import: "./src/another-module.js",
+  //     dependOn: "shared",
+  //   },
+  //   shared: "lodash",
+  // },
   //just for development time (not for product env)
   devtool: "inline-source-map",
   //webpack-dev-server-start
