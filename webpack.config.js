@@ -44,6 +44,10 @@ module.exports = {
   //webpack-dev-server-start
   optimization: {
     runtimeChunk: "single",
+    //for split chunks plugin
+    splitChunks: {
+      chunks: "all",
+    },
   },
   //webpack-dev-server-end
   module: {
